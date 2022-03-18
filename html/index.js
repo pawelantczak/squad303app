@@ -27,7 +27,7 @@ function isMobile() {
 }
 
 async function draw() {
-    const response = await fetch('https://example.in/api'); //provide yours api endpoint, 1920.in won't work due to cors
+    const response = await fetch('https://powiedz.im/api'); //provide yours api endpoint, 1920.in won't work due to cors
     phoneNum = await response.json();
     setMessage();
 }
