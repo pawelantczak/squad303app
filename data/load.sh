@@ -1,0 +1,1 @@
+cat phones.csv | awk -F',' '{print " SET \""$1"\" \"""\" \n"}' | redis-cli --pipe -h $REDIS_SERVER -p $REDIS_PORT -a $REDIS_PASS -n $REDIS_DB
